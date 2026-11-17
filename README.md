@@ -42,3 +42,20 @@ O repositório conta com **duas abordagens complementares**:
 ├── orbitais.py                  # Versão Python para simulação e plotagem científica
 ├── Projeto_ComputaçãoGráfica    # Artigo sobre o tema
 └── README.md                    # Documentação do projeto
+
+---
+
+## Como Executar 
+
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/CarolineGrizante/hidrogenio_subniveis_energeticos_3d.git
+
+2. Versão Python (vizualizador_hidrogenis.py)
+   ```bash
+   pip install -r requirements.txt
+
+Execute o script:
+   ```bash
+   pip install -r requirements.txt
+
