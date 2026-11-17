@@ -1,6 +1,6 @@
 <div align="center">
 
-# Orbitais do Hidrogénio · Explorador 3D
+# Orbitais do Hidrogênio · Explorador 3D
 
 **Visualização interativa em 3D e simulação computacional da função de onda $\psi_{n,l,m}(r, \theta, \phi)$ e densidade de probabilidade $\vert{}\psi\vert{}^2$ do átomo de hidrogénio.**
 
