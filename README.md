@@ -38,7 +38,7 @@ O repositório conta com **duas abordagens complementares**:
 ## 📂 Estrutura do Repositório
 
 ```text
-├── index.html          # Aplicação Web 3D interativa (Three.js embutido)
-├── orbitais.py         # Versão Python para simulação e plotagem científica
-├── requirements.txt    # Dependências da versão Python
-└── README.md           # Documentação do projeto
+├── index.html                   # Aplicação Web 3D interativa (Three.js embutido)
+├── orbitais.py                  # Versão Python para simulação e plotagem científica
+├── Projeto_ComputaçãoGráfica    # Artigo sobre o tema
+└── README.md                    # Documentação do projeto
