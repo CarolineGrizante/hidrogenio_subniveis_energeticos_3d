@@ -65,11 +65,13 @@ $$\psi_{n,l,m}(r, \theta, \phi) = R_{n,l}(r) \cdot Y_l^m(\theta, \phi)$$
 * **$Y_l^m(\theta, \phi)$:** Componente angular (Harmônicos Esféricos).
 
 ---
+
 ## Como Executar
 
 ### 1. Clonar o Repositório
 ```bash
-git clone [https://github.com/CarolineGrizante/hidrogenio_subniveis_energeticos_3d.git]
+git clone [https://github.com/CarolineGrizante/hidrogenio_subniveis_energeticos_3d.git](https://github.com/CarolineGrizante/hidrogenio_subniveis_energeticos_3d.git)
+cd hidrogenio_subniveis_energeticos_3d
 ```
 
 ### 2. Versão Web (`index.html`)
@@ -86,4 +88,5 @@ Não exige instalação de dependências ou servidor local. Basta dar um duplo c
    ```bash
    python vizualizador_hidrogenis.py
    ```
+
 ---
