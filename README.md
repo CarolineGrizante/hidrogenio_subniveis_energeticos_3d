@@ -9,7 +9,6 @@
 ![HTML5](https://img.shields.io/badge/HTML5-Single_File-orange?style=for-the-badge&logo=html5&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 
-[🚀 Demonstração Web](#-versão-web-interativa-indexhtml) • [🐍 Versão Python](#-versão-python) • [📐 Fundamentos Físicos](#-fundamentos-da-mecânica-quântica) • [🎮 Controles](#-como-interagir)
 
 </div>
 
