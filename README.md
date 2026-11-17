@@ -19,7 +19,7 @@ O **Orbitais do Hidrogénio · Explorador 3D** é uma ferramenta didática proje
 
 O repositório conta com **duas abordagens complementares**:
 1. **Versão Web (`index.html`):** Aplicação autocontida construída com **Three.js (WebGL)**, rodando diretamente no navegador com renderização volumétrica/nuvem de pontos, controle de câmera orbital e troca instantânea de estados quânticos.
-2. **Versão Python:** Script científico para geração, amostragem estatística (Monte Carlo) e análise numérica das funções de onda em ambiente desktop.
+2. **Versão Python:** Script científico para geração, amostragem estatística e análise numérica das funções de onda em ambiente desktop.
 
 ---
 
