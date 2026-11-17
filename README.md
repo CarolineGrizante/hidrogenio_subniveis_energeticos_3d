@@ -69,8 +69,7 @@ $$\psi_{n,l,m}(r, \theta, \phi) = R_{n,l}(r) \cdot Y_l^m(\theta, \phi)$$
 
 ### 1. Clonar o Repositório
 ```bash
-git clone [https://github.com/CarolineGrizante/hidrogenio_subniveis_energeticos_3d.git](https://github.com/CarolineGrizante/hidrogenio_subniveis_energeticos_3d.git)
-cd hidrogenio_subniveis_energeticos_3d
+git clone [https://github.com/CarolineGrizante/hidrogenio_subniveis_energeticos_3d.git]
 ```
 
 ### 2. Versão Web (`index.html`)
