@@ -18,7 +18,38 @@ O **Orbitais do Hidrogênio · Explorador 3D** é uma ferramenta didática proje
 
 O repositório conta com **duas abordagens complementares**:
 1. **Versão Web (`index.html`):** Aplicação autocontida construída com **Three.js (WebGL)**, rodando diretamente no navegador com renderização volumétrica/nuvem de pontos, controle de câmera orbital e troca instantânea de estados quânticos.
-2. **Versão Python (`vizualizador_hidrogenis.py`):** Script científico para geração, amostragem estatística e análise numérica das funções de onda em ambiente desktop.
+2. **Versão Python (`vizualizador_hidrogenis.py`):** Script científico para geração de malhas isosuperfície 3D, cortes transversais e análise numérica das funções de onda em ambiente desktop.
+
+---
+
+## Demonstração Visual
+
+### 1. Versão Web Interativa (`index.html`)
+
+A interface web permite explorar os orbitais diretamente no navegador com renderização volumétrica em tempo real, controles de resolução e personalização de cores.
+
+| Visão Geral (Orbital Fundamental $1s$) | Exploração de Orbitais Complexos ($4d$) |
+| :---: | :---: |
+| ![Página Inicial Web](Imagens/VersãoWeb_PaginaInicial.jpg) | ![Orbital 4d](Imagens/VersãoWeb_Exemplo1.jpg) |
+| **Página Inicial:** Visualização do estado fundamental ($n=1, l=0, m=0$) com métricas de nós radiais, escala espacial em raios de Bohr ($a_0$) e tempo de processamento no navegador. | **Subnível $4d$ ($m=+1$):** Representação da nuvem eletrônica com quatro lóbulos, distinguindo visualmente as fases positiva (vermelho) e negativa (azul) da função de onda. |
+
+| Ajuste de Resolução e Limiar ($4d, m=+2$) | Personalização de Fases ($3p, m=-1$) |
+| :---: | :---: |
+| ![Ajuste de Resolução](Imagens/VersãoWeb_Exemplo2.jpg) | ![Personalização de Cores](Imagens/VersãoWeb_InteracaoUsuario.jpg) |
+| **Controle de Isosuperfície:** Aumento da densidade de pontos ($64^3$) e ajuste do limiar de probabilidade para evidenciar o formato dos lóbulos. | **Interatividade e Paleta:** Seletor RGB em tempo real para alterar as cores das fases da função de onda e controles de rotação automática da câmera. |
+
+### 2. Versão Científica em Python (`vizualizador_hidrogenis.py`)
+
+O script em Python foca na geração de malhas de alta resolução (algoritmo *Marching Cubes*) e na análise interna da estrutura dos orbitais, exibindo métricas de desempenho no terminal.
+
+#### Entrada de Parâmetros e Benchmarking no Terminal
+![Terminal Python](Imagens/VersãoPython_ComandoPrompt.png)
+*O usuário informa os números quânticos ($n, l, m$) e a resolução da grade tridimensional (ex.: $350 \times 350 \times 350$ voxels). Ao final do cálculo, o sistema exibe o tempo exato de processamento e o consumo de memória RAM.*
+
+| Orbital $3p$ ($n=3, l=1, m=0$) | Orbital de Alta Ordem |
+| :---: | :---: |
+| ![Orbital 3p Python](Imagens/VersãoPython_Exemplo1.png) | ![Orbital Complexo Python](Imagens/VersãoPython_Exemplo2.png) |
+| **Visão Completa e Corte Transversal:** À esquerda, a superfície 3D completa; à direita, o corte seccional revelando os **nós radiais internos** (regiões onde a densidade de probabilidade é nula). | **Simetria Multilobular:** Renderização de alta definição demonstrando a complexidade geométrica e as inversões de fase em níveis energéticos superiores. |
 
 ---
 
@@ -37,6 +68,7 @@ O repositório conta com **duas abordagens complementares**:
 ## 📂 Estrutura do Repositório
 
 ```text
+├── Imagens/                     # Capturas de tela das versões Web e Python
 ├── index.html                   # Aplicação Web 3D interativa (Three.js embutido)
 ├── vizualizador_hidrogenis.py   # Versão Python para simulação e plotagem científica
 ├── Projeto_ComputaçãoGráfica    # Artigo sobre o tema
@@ -61,8 +93,8 @@ A distribuição espacial do elétron é calculada a partir das soluções da Eq
 
 $$\psi_{n,l,m}(r, \theta, \phi) = R_{n,l}(r) \cdot Y_l^m(\theta, \phi)$$
 
-* **$R_{n,l}(r)$:** Componente radial (Polinômios Associados de Laguerre).
-* **$Y_l^m(\theta, \phi)$:** Componente angular (Harmônicos Esféricos).
+- **$R_{n,l}(r)$:** Componente radial (Polinômios Associados de Laguerre).
+- **$Y_l^m(\theta, \phi)$:** Componente angular (Harmônicos Esféricos).
 
 ---
 
@@ -80,7 +112,7 @@ Não exige instalação de dependências ou servidor local. Basta dar um duplo c
 ### 3. Versão Python (`vizualizador_hidrogenis.py`)
 1. Instale as bibliotecas necessárias:
    ```bash
-   pip install numpy scipy matplotlib
+   pip install numpy scipy pyvista
    ```
    *(Caso utilize um arquivo `requirements.txt`, rode `pip install -r requirements.txt`)*
 
@@ -88,5 +120,3 @@ Não exige instalação de dependências ou servidor local. Basta dar um duplo c
    ```bash
    python vizualizador_hidrogenis.py
    ```
-
----
