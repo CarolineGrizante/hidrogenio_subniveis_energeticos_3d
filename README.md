@@ -30,12 +30,12 @@ A interface web permite explorar os orbitais diretamente no navegador com render
 
 | Visão Geral (Orbital Fundamental $1s$) | Exploração de Orbitais Complexos ($4d$) |
 | :---: | :---: |
-| ![Página Inicial Web](Imagens/VersãoWeb_PaginaInicial.jpg) | ![Orbital 4d](Imagens/VersãoWeb_Exemplo1.jpg) |
+| ![Página Inicial Web](Imagens/VersaoWeb_PaginaInicial.jpg) | ![Orbital 4d](Imagens/VersaoWeb_Exemplo1.jpg) |
 | **Página Inicial:** Visualização do estado fundamental ($n=1, l=0, m=0$) com métricas de nós radiais, escala espacial em raios de Bohr ($a_0$) e tempo de processamento no navegador. | **Subnível $4d$ ($m=+1$):** Representação da nuvem eletrônica com quatro lóbulos, distinguindo visualmente as fases positiva (vermelho) e negativa (azul) da função de onda. |
 
 | Ajuste de Resolução e Limiar ($4d, m=+2$) | Personalização de Fases ($3p, m=-1$) |
 | :---: | :---: |
-| ![Ajuste de Resolução](Imagens/VersãoWeb_Exemplo2.jpg) | ![Personalização de Cores](Imagens/VersãoWeb_InteracaoUsuario.jpg) |
+| ![Ajuste de Resolução](Imagens/VersaoWeb_Exemplo2.jpg) | ![Personalização de Cores](Imagens/VersaoWeb_InteracaoUsuario.jpg) |
 | **Controle de Isosuperfície:** Aumento da densidade de pontos ($64^3$) e ajuste do limiar de probabilidade para evidenciar o formato dos lóbulos. | **Interatividade e Paleta:** Seletor RGB em tempo real para alterar as cores das fases da função de onda e controles de rotação automática da câmera. |
 
 ### 2. Versão Científica em Python (`vizualizador_hidrogenis.py`)
@@ -43,7 +43,7 @@ A interface web permite explorar os orbitais diretamente no navegador com render
 O script em Python foca na geração de malhas de alta resolução (algoritmo *Marching Cubes*) e na análise interna da estrutura dos orbitais, exibindo métricas de desempenho no terminal.
 
 #### Entrada de Parâmetros e Benchmarking no Terminal
-![Terminal Python](Imagens/VersãoPython_ComandoPrompt.png)
+![Terminal Python](Imagens/VersaoPython_ComandoPrompt.png)
 *O usuário informa os números quânticos ($n, l, m$) e a resolução da grade tridimensional (ex.: $350 \times 350 \times 350$ voxels). Ao final do cálculo, o sistema exibe o tempo exato de processamento e o consumo de memória RAM.*
 
 | Orbital $3p$ ($n=3, l=1, m=0$) | Orbital de Alta Ordem |
