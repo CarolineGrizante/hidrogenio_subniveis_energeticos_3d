@@ -131,9 +131,9 @@ cd hidrogenio_subniveis_energeticos_3d
 Não exige instalação de dependências ou servidor local. Basta dar um duplo clique no arquivo `index.html` para abri-lo em qualquer navegador moderno (Chrome, Edge, Firefox ou Safari).
 
 ### 3. Versão Python (`vizualizador_hidrogenis.py`)
-1. Instale as bibliotecas necessárias:
+1. Instale as bibliotecas necessárias (requer `scipy>=1.15.0` para o suporte a `sph_harm_y`):
    ```bash
-   pip install numpy scipy pyvista
+   pip install numpy "scipy>=1.15.0" pyvista psutil
    ```
    *(Caso utilize um arquivo `requirements.txt`, rode `pip install -r requirements.txt`)*
 
