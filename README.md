@@ -17,14 +17,14 @@
 O **Orbitais do Hidrogênio · Explorador 3D** é uma ferramenta didática projetada para transformar equações abstratas da mecânica quântica em representações visuais intuitivas e manipuláveis em tempo real. 
 
 O repositório conta com **duas abordagens complementares**:
-1. **Versão Web (index.html):** Aplicação autocontida construída com **Three.js (WebGL)**, rodando diretamente no navegador com renderização volumétrica/nuvem de pontos, controle de câmera orbital e troca instantânea de estados quânticos.
-2. **Versão Python (vizualizador_hidrogenis.py):** Script científico para geração de malhas isosuperfície 3D, cortes transversais e análise numérica das funções de onda em ambiente desktop.
+1. **Versão Web (`index.html`):** Aplicação autocontida construída com **Three.js (WebGL)**, rodando diretamente no navegador com renderização volumétrica/nuvem de pontos, controle de câmera orbital e troca instantânea de estados quânticos.
+2. **Versão Python (`vizualizador_hidrogenis.py`):** Script científico para geração de malhas isosuperfície 3D, cortes transversais e análise numérica das funções de onda em ambiente desktop.
 
 ---
 
 ## Demonstração Visual
 
-### 1. Versão Web Interativa (index.html)
+### 1. Versão Web Interativa (`index.html`)
 
 A interface web permite explorar os orbitais diretamente no navegador com renderização volumétrica em tempo real, controles de resolução e personalização de cores.
 
@@ -52,7 +52,7 @@ A interface web permite explorar os orbitais diretamente no navegador com render
 
 ---
 
-### 2. Versão Científica em Python (vizualizador_hidrogenis.py)
+### 2. Versão Científica em Python (`vizualizador_hidrogenis.py`)
 
 O script em Python foca na geração de malhas de alta resolução (algoritmo *Marching Cubes*) e na análise interna da estrutura dos orbitais, exibindo métricas de desempenho no terminal.
 
@@ -127,10 +127,10 @@ git clone [https://github.com/CarolineGrizante/hidrogenio_subniveis_energeticos_
 cd hidrogenio_subniveis_energeticos_3d
 ```
 
-### 2. Versão Web (index.html)
+### 2. Versão Web (`index.html`)
 Não exige instalação de dependências ou servidor local. Basta dar um duplo clique no arquivo `index.html` para abri-lo em qualquer navegador moderno (Chrome, Edge, Firefox ou Safari).
 
-### 3. Versão Python (vizualizador_hidrogenis.py)
+### 3. Versão Python (`vizualizador_hidrogenis.py`)
 1. Instale as bibliotecas necessárias (requer `scipy>=1.15.0` para o suporte a `sph_harm_y`):
    ```bash
    pip install numpy "scipy>=1.15.0" pyvista psutil
