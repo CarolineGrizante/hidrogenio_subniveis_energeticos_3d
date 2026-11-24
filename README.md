@@ -48,7 +48,7 @@ O script em Python foca na geração de malhas de alta resolução (algoritmo *M
 
 | Orbital $3p$ ($n=3, l=1, m=0$) | Orbital de Alta Ordem |
 | :---: | :---: |
-| ![Orbital 3p Python](Imagens/VersãoPython_Exemplo1.png) | ![Orbital Complexo Python](Imagens/VersãoPython_Exemplo2.png) |
+| ![Orbital 3p Python](Imagens/VersaoPython_Exemplo1.png) | ![Orbital Complexo Python](Imagens/VersaoPython_Exemplo2.png) |
 | **Visão Completa e Corte Transversal:** À esquerda, a superfície 3D completa; à direita, o corte seccional revelando os **nós radiais internos** (regiões onde a densidade de probabilidade é nula). | **Simetria Multilobular:** Renderização de alta definição demonstrando a complexidade geométrica e as inversões de fase em níveis energéticos superiores. |
 
 ---
